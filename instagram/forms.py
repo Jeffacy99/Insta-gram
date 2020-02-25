@@ -7,4 +7,16 @@ class PhotoUploadModelForm(forms.ModelForm):
 
     class Meta:
         model = Image
-        fields = [ 'title','image','caption']        
+        fields = [ 'title','image','caption']
+
+
+class CommentForm(forms.ModelForm):
+
+    class Meta:
+        model = Comment
+        fields = ['comment']
+
+class ProfileEditForm(forms.ModelForm):
+    class Meta:
+        model = Profile
+        fields = ['profile_path', 'bio']            
