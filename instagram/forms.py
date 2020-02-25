@@ -19,4 +19,4 @@ class CommentForm(forms.ModelForm):
 class ProfileEditForm(forms.ModelForm):
     class Meta:
         model = Profile
-        fields = ['profile_path', 'bio']            
+        fields = ['profile_path', 'bio']
